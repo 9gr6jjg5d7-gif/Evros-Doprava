@@ -998,11 +998,11 @@
       }
     }
 
-    @media (max-width: 768px) {
+    
       .site-wrap {
         padding: 12px 0;
       }
-
+@media (max-width: 768px) {
       .container {
         padding: 0 12px;
       }
@@ -1065,22 +1065,39 @@
       }
 
       .hero-inner,
-      .services,
-      .cta-band,
-      .about,
-      .contact-form-section {
-        padding-left: 18px;
-        padding-right: 18px;
-      }
+.services,
+.cta-band,
+.about,
+.contact-form-section {
+    padding-left: 18px;
+    padding-right: 18px;
+}
 
-      .hero-inner {
-        grid-template-columns: 1fr;
-        padding-top: 36px;
-        padding-bottom: 30px;
-        min-height: auto;
-        gap: 24px;
-      }
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 36px;
+    padding-bottom: 30px;
+    min-height: auto;
+}
 
+.hero-image {
+    order: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 430px;
+    max-height: none;
+}
+
+.hero-content {
+    text-align: center;
+}
       .hero-content {
         text-align: center;
       }
